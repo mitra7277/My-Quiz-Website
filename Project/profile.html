@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My webpage</title>
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(53, 219, 19, 0.842); 
+      padding: 20px
+      font-family:'Arial',sans-serif;
+      line-height:1.6;
+      color:rgba(11, 14, 18, 0.937);
+}
+header {
+    background: linear-gradient(90deg,#007bff,#0056b3);
+    color: #0c120c;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position:sticky;
+    z-index:1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header h1 {
+    font-size: 1.5rem;
+}
+header nav a {
+    color: hsla(32, 8%, 70%, 0.985);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+header nav a:hover {
+    text-decoration:underline;
+}
+.hero {
+    height: 100vh;
+    background: url('https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg') no-repeat center center/cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color:#e9e4e8f8;
+    flex-direction:column;
+    background-blend-mode: overlay;
+}
+.hero h1 {
+    font-size:3rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size:1.2rem;
+    margin-bottom:1rem;
+}
+.hero .btn {
+    display: inline block;
+    padding: 0.8rem 2rem;
+    background:#da051a;
+    color:#e3eee9e3;
+    text-decoration: none;
+    border-radius:50px;
+
+}
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+section h2 {
+    
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0cb700;
+    text-align: center;
+    background-color: rgb(233, 242, 246); 
+      padding: 10px
+}
+
+section p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill-card {
+    background: #e2e6e9;
+    border: 1px solid #ed0202;
+    border-radius: 10px;
+  
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(179, 137, 20, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.skill-card:hover {
+    transform: translater(-5px);
+}
+.skill-card p {
+    font-size: 1rem;
+}
+footer {
+    display: flex;
+    background:#038b33;
+    color: #e4e0dd;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+footer p {
+    margin: 0.5rem 0;
+}
+footer a {
+    color: #010801e2;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+   </style>
+</head>
+<body>
+    <header>
+        <h1>My Webpage</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#footer">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+
+              <marquee behavior="" direction="">  <h1>Welcome to My Quiz Website</h1></marquee>
+
+                <h1>Best Quiz to inspire you</h1>
+                <p>Exolore My Journey dream.</p>
+                <a href="login.html" class="btn"> LOGIN PAGE</a>
+            </section>
+            <section id="about">
+                <h2>About me</h2>
+                <p>Data is the new oil; you are the refiner
+                    </p>
+            </section>
+                <sction id="skills">
+                    <h2>My favourite Company Name Below Section</h2>
+                    <div class="skills">
+                       
+                        
+                        <div class="skill-card">
+                            <h3>Tesla</h3>
+                        <p>Tesla, Inc. is a multinational company
+                             specializing in electric vehicles
+                              (EVs), renewable energy solutions, and energy storage systems
+                             Founded in 2003 by engineers Martin Eberhar
+                              and Marc Tarpenning, the company was later significantly shaped by Elon Musk,
+                               who joined as an investor and chairman in 2004.
+                             Musk is now the face of the company and its CEO.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Amazon</h3>
+                        <p>Amazon.com, Inc. is a multinational technology and e-commerce company that has grown to dominate global retail, cloud computing, and various other industries. It was founded on July 5, 1994, by Jeff Bezos in Seattle, Washington. Initially, Amazon started as an online bookstore but quickly expanded its offerings to become "The Everything Store."</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Zomato</h3>
+                        <p>Zomato is an Indian multinational restaurant discovery and food delivery platform that connects users with restaurants, food delivery services, and dining experiences. It was founded in 2008 by Deepinder Goyal and Pankaj Chaddah in Gurgaon, India. Initially called Foodiebay, it rebranded to Zomato in 2010 and has since expanded its services globally.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Instagram</h3>
+                            <p>Instagram is a globally popular photo and video-sharing social media platform known for its focus on visual content. It was launched on October 6, 2010, by Kevin Systrom and Mike Krieger and was acquired by Facebook (now Meta Platforms, Inc.) in 2012.
+
+                            </p>
+                            </div>
+                            
+                        </div>
+
+                        </div>
+                    </sction>
+                    </main>
+                    <footer id="footer">
+                        <p>&copy; <?php echo date("Y"); ?> My Webpage. All Rights Reserved.</p>
+                        <p>Made with love by <a href="#home">[Mitranjan Kumar]</a></p>
+                    </footer>
+
+                </body>
+
+    
+</html>
